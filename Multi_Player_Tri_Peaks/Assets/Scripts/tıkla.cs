@@ -16,6 +16,7 @@ public class tıkla : MonoBehaviour, IPointerClickHandler
             if (CardDisplay.CurrCardid==tıklanankart.cardid+1 | tıklanankart.cardid-1 ==CardDisplay.CurrCardid)
             {
                 Debug.Log("kartalınabilir");
+                tıklanankart.transform.position = new Vector3(x, y, z);
             }
             Debug.Log("Kart adı:" +tıklanankart.name);
         }
