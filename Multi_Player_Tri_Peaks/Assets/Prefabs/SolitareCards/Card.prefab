@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 635654267380425326}
   - component: {fileID: 635654267380425312}
   - component: {fileID: 635654267380425327}
+  - component: {fileID: 6613347192227481887}
   - component: {fileID: -4292830768030673223}
   - component: {fileID: -2118771381020360654}
-  - component: {fileID: -6509527081031270164}
-  - component: {fileID: -901504312123453162}
-  m_Layer: 5
+  - component: {fileID: -4839939305887521842}
+  m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,6 +80,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6613347192227481887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635654267380425325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!223 &-4292830768030673223
 Canvas:
   m_ObjectHideFlags: 0
@@ -115,7 +132,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isOpen: 0
   cardName: 
---- !u!114 &-6509527081031270164
+  cardid: 0
+  "\xF6n": {fileID: 0}
+  arka: {fileID: 0}
+--- !u!114 &-4839939305887521842
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,23 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 635654267380425325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662dbd18480c3ca48bda7cf88752bd1a, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b7993b10e07da04eb2061660f6bbfbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-901504312123453162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635654267380425325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
+  image: {fileID: 0}
