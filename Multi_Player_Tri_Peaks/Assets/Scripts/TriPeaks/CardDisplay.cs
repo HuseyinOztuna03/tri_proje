@@ -23,7 +23,7 @@ public class CardDisplay : MonoBehaviour
 
     int syc = 0;
 
-    public GameObject[] PCards = new GameObject[23];
+    public GameObject[] PCards;
 
     void Start()
     {
