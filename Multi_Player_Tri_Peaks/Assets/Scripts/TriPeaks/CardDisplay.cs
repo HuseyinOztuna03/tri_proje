@@ -121,7 +121,8 @@ public class CardDisplay : MonoBehaviour
     void CreateCard(string cardId, Vector3 position,int ordlyr,bool ýsopen)
     {
         GameObject card = Instantiate(cardPrefab, position, Quaternion.identity);
-        GameObject.fi
+        GameObject gb= GameObject.Find(cardId);
+        
         card.transform.SetParent(transform);
 
         Canvas canvas = card.GetComponent<Canvas>();
