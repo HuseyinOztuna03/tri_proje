@@ -7,6 +7,18 @@ public class tıkla : MonoBehaviour, IPointerClickHandler
 {
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Kart adı:" + GetComponent<CardData>().cardName);
+        //GameObject gc = GameObject.Find("GameCanvas");
+        //CardDisplay cd = gc.GetComponent<CardDisplay>();
+        CardData tıklanankart = GetComponent<CardData>();
+        
+        if (CardDisplay.CurrCard != tıklanankart.name)
+        {
+            if (CardDisplay.CurrCardid==tıklanankart.cardid+1 | tıklanankart.cardid-1 ==CardDisplay.CurrCardid)
+            {
+                Debug.Log("kartalınabilir");
+            }
+            Debug.Log("Kart adı:" +tıklanankart.name);
+        }
+
     }
 }

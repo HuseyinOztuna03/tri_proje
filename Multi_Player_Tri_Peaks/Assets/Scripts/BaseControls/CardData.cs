@@ -23,6 +23,10 @@ public class CardData : MonoBehaviour
             {
                 image.sprite = deckFront.sprites[i];
                 cardid = i % 13;
+                if (CardDisplay.CurrCard==cardName)
+                {
+                    CardDisplay.CurrCardid = cardid;
+                }
             }
             if (deckFront.sprites[i].name==cardName& isOpen==false)
             {

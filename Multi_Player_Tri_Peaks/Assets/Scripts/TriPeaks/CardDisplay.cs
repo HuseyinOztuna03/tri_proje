@@ -15,7 +15,8 @@ public class CardDisplay : MonoBehaviour
     public int bosluk;
     public int yukseklik;
     int lx;
-    public string CurrCard;
+    public static string CurrCard;
+    public static int CurrCardid;
 
     private string[] cardDeck;
 
@@ -120,6 +121,7 @@ public class CardDisplay : MonoBehaviour
     void CreateCard(string cardId, Vector3 position,int ordlyr,bool ýsopen)
     {
         GameObject card = Instantiate(cardPrefab, position, Quaternion.identity);
+        GameObject.fi
         card.transform.SetParent(transform);
 
         Canvas canvas = card.GetComponent<Canvas>();
