@@ -251,6 +251,7 @@ MonoBehaviour:
   k_bosluk: 1500
   bosluk: 450
   yukseklik: 400
+  PCards: []
 --- !u!1 &614790841
 GameObject:
   m_ObjectHideFlags: 0
