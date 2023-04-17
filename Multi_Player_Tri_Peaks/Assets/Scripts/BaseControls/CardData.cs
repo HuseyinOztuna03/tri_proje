@@ -8,23 +8,25 @@ public class CardData : MonoBehaviour
     private Image image;
     public bool isOpen;
     public string cardName;
+    public int cardid;
 
     private void Start()
     {
         GameObject deckObject = GameObject.Find("DeckObject");
         DeckFront deckFront = deckObject.GetComponent<DeckFront>();
 
-        Debug.Log(deckFront.sprites.Length);
         image = GetComponent<Image>();
 
-        if (isOpen)
+        for (int i = 0; i < deckFront.sprites.Length; i++)
         {
-            foreach (var i in deckFront.sprites)
+            if (deckFront.sprites[i].name==cardName & isOpen)
             {
-                if (i.name == cardName)
-                {
-                    image.sprite = i;
-                }
+                image.sprite = deckFront.sprites[i];
+                cardid = i % 13;
+            }
+            if (deckFront.sprites[i].name==cardName& isOpen==false)
+            {
+                cardid = i % 13;
             }
         }
 

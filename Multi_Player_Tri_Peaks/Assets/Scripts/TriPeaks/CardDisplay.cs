@@ -8,7 +8,6 @@ using System.Threading;
 
 public class CardDisplay : MonoBehaviour
 {
-    public DeckFront[] deckFront;
     public GameObject cardPrefab;
     public int numberOfRows;
     public float cardSpacing;
@@ -16,6 +15,7 @@ public class CardDisplay : MonoBehaviour
     public int bosluk;
     public int yukseklik;
     int lx;
+    public string CurrCard;
 
     private string[] cardDeck;
 
@@ -112,6 +112,7 @@ public class CardDisplay : MonoBehaviour
                 string lastcardId = cardDeck[0];
                 Vector3 lastcardPosition = new Vector3(((kac-13) * cardSpacing * c) + xxx, yuk, 0);
                 CreateCard(lastcardId, lastcardPosition, 4, true);
+                CurrCard = lastcardId;
             }
         }
     }
